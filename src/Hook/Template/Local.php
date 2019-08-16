@@ -65,6 +65,9 @@ class Local implements Template
             '<?php' . PHP_EOL .
             '$autoLoader = ' . $this->vendorPath . '/autoload.php\';' . PHP_EOL . PHP_EOL .
             'if (!file_exists($autoLoader)) {' . PHP_EOL .
+                '$autoLoader = ' . __DIR__ . '../../../../vendor/autoload.php\';' . PHP_EOL . PHP_EOL .
+            '}' . PHP_EOL .
+            'if (!file_exists($autoLoader)) {' . PHP_EOL .
             '    fwrite(STDERR, \'Composer autoload.php could not be found\');' . PHP_EOL .
             '    exit(1);' . PHP_EOL .
             '}' . PHP_EOL .
