@@ -1,5 +1,5 @@
 {
-  "name": "captainhook/captainhook",
+  "name": "sashas777/captainhook",
   "type": "library",
   "description": "PHP git hook manager",
   "keywords": ["git", "hooks", "pre-commit", "pre-push", "commit-msg", "prepare-commit-msg"],
